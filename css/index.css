@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Rajdhani:wght@300&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg-img{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(../images/bg-img.jpg) fixed no-repeat; 
+    background-size: cover;
+    height: 85vh;  
+    color: white; 
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.company-tittle{
+    font-weight: 800;
+    font-size: 42px;
+    letter-spacing: 1.2px;
+    font-family: Caslon,"Proxima Nova",Avenir,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    line-height: 18px;
+}
+
+.company-info{ 
+    font-weight: 500;
+    font-size: 14px; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.share-icons{ 
+    padding: 5px;
+}
+
+.share-icons a{ 
+    padding: 4px; 
+    text-decoration: none; 
+}
+
+
+.share-icons a i{
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    font-weight: bold;
+    font-size: 18px; 
+    margin-left: 5px;
+    padding: 10px; 
+    border-radius: 50%;  
+    color: rgba(255, 255, 255, 1);
+    z-index: -1;
+    margin-bottom: 15px;
+}
+
+
+.share-icons a i:hover{
+    z-index: 1;
+    background: rgb(255, 255, 255);
+    transition: all 0.435s linear;  
+    color: rgb(0, 42, 255);
+} 
+
+nav {
+    overflow: hidden;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(../images/bg-img.jpg) fixed no-repeat; 
+    background-size: cover; 
+    position: fixed; 
+    top: 0;  
+    width: 100%; 
+    color: white; 
+    font-family: 'Crimson Text', serif;
+    font-family: 'Rajdhani', sans-serif;
+} 
+
+nav .container{ 
+    padding: 10px 0px; 
+}
+
+nav i{
+    font-size: 34px;
+    padding: 8px;
+}
+
+nav small{ 
+    text-transform: capitalize;  
+    font-size: 18px;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav div span{
+    padding: 10px;
+}
+
+
+.nav-options{  
+    float: right; 
+}
+
+.nav-options a{ 
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: aliceblue;  
+    padding: 10px 10px 4px 10px;  
+    margin: 0px 6px;
+}
+
+
+.active{
+    border-bottom: 2px solid rgb(255, 255, 255, 0.5);
+}
+
+.nav-options a:hover{
+    border-bottom: 1.95px solid rgba(255, 255, 255, 0.3); 
+}
+
+#contact{
+    border: 2.2px solid rgba(248, 248, 248, 0.6);
+    padding: 7px 22px;
+    border-radius: 25px;
+}
+
+#contact:hover{
+    background: rgba(255, 255, 255, 0.4);
+    border:2.2px solid rgba(255, 255, 255, 0);
+    transition: all linear 0.3s;
+}
+
+.nav-icon{
+    background: none;
+    border: none;
+    position: absolute;
+    right: 5%; 
+}
+
+.nav-icon i{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+ 
+ 
+.hide{
+    display: none;
+}
+
+ 
+.mob-nav {
+    height: 400px;
+    width: 97%; 
+    margin: 25px auto;
+    background-color:  rgba(68, 93, 117, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.mob-nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 22px;  
+    padding: 12px;
+    margin: 8px 0px;
+    border-radius: 22px;
+}
+
+.mob-nav a:hover{
+    font-weight: bold;
+    letter-spacing: 1.25px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.57);
+    color: rgb(0, 235, 192);
+    transform: all 0.3s linear;
+}
+  
+
+@media screen and (min-width:888px){
+    #mob-view , #nav-icon , #mob-nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width:888px){
+    #tab-nav{
+        display: none;
+    }
+    .test{
+        width: 97%;
+        margin: 10px auto;
+    }
+    .company-tittle{
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
