@@ -150,6 +150,9 @@ nav div span{
     display: none;
 }
 
+.show{
+    display: block;
+}
  
 .mob-nav {
     height: 400px;
