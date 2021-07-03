@@ -94,13 +94,7 @@
     color: #535074;
     width: 50%;
   }
-  
-  @media (max-width: 767px) {
-    .section-header p {
-      width: 100%;
-    }
-  }
-  
+    
   #services {
     padding: 60px 0 40px 0; 
     padding: 100px 0 ;
@@ -164,6 +158,13 @@
     text-align: left;
   }
 
+
+  
+  @media (max-width: 767px) {
+    .section-header p {
+      width: 100%;
+    }
+  }
 
 
 
